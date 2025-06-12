@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface JutsuRepository extends JpaRepository<Jutsu, Long> {
-    List<Jutsu> findByNomeContainingIgnoreCase(String nome);  // Busca parcial por nome
-    List<Jutsu> findByDificuldadeGreaterThan(int dificuldade); // Buscar por dificuldade
+    List<Jutsu> findByNomeContainingIgnoreCase(String nome);
+    List<Jutsu> findByDificuldadeGreaterThan(int dificuldade);
 }
